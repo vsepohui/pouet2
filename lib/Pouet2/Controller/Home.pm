@@ -23,51 +23,24 @@ sub _read_book {
 	my @buff;
 	for my $s (@file) {
 		$s =~ s/\s+$//g;
-		$c ++ unless $s;
+		unless ($s) {
+			$c ++;
+		}
+	
+		$c = 0 if $s;
 		
 		push @buff, $s;
 		
-		if ($c >= 4) {
-			if (!$s) {
-				my ($i, $j);
-				for (0..scalar (@buff)-1) {
-					if ($buff[$_]) {
-						$i = $_;
-						last;
-					}
-				}
-				
-				for (1..scalar (@buff)) {
-					
-					if ($buff[scalar (@buff) - $_] ) {
-						$j = scalar (@buff) - $_;
-						last;
-					} 
-				}
-				
-				
-				if ($i || $j) {
-				
-					my @b2;
-					for ($i..$j) {
-						push @b2, $buff[$_];
-					}
-					
-					if (scalar (@b2) >= 2) {
-						my $p = join "\n", @b2;
-
-						if ($p =~ /\S/) {
-							push @book, $p;	
-						}
-					
-						@buff = ();
-						
-					}
-				}
-
-			}
+		if (!$s && $c >= 2) {
+			my $p = join "\n", @buff;
+			$p =~ s/^\s+//;
+			$p =~ s/\s+$//;
+			push @book, $p if $p;
+			
+			@buff = ();
 			$c = 0;
-		} 
+		}
+
 	}
 
 	return \@book;
