@@ -4,13 +4,12 @@
 <div class="container">
 <div class="m-auto" style="align: center; max-width: 800px;">
 <div align="center">
-		<p class="h1" align="center">
-			Я - свет<br/>
-			Я - тень<br/>
-			Меня здесь нет<br/>
-			Теперь.<br/>
+		<p class="h2" align="center">
+% my $p = $pouem;
+% $p =~ s/\n/\<br\/\>\n/g;
+%== $p;
 		</p>
-		<br/>
+		<br/><br/>
 		<a class="btn btn-primary btn-lg" href="/">Случайный стих</a>
 </div>
 </div>
