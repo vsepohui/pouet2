@@ -1,5 +1,8 @@
 ---
-listen:
-   - http://127.0.0.1:9030
+hypnotoad:
+  listen:
+    - http://127.0.0.1:9030
+  workers: 4
+  proxy: 1
 secrets:
   - 37b5a4372e8c819352e5084cd0c067fa1774593b
