@@ -35,7 +35,7 @@
 		<%= content %>
 	</div>
 	<footer class="container footer fixed-bottom d-flex flex-wrap justify-content-center border-top" style="padding-top: 12px; margin-bottom: 12px;">
-		Поэт&nbsp;<a href="https://trunaev.ru/">Иван Трунев</a>
+		Поэт&nbsp;<a href="https://trunaev.ru/">Иван Трунаев</a>
 	</footer>
 </div>
 </main>
