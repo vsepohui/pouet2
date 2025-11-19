@@ -1,20 +1,20 @@
 package Pouet2;
-use Mojo::Base 'Mojolicious', -signatures;
 
-# This method will run once at server start
-sub startup ($self) {
+use 5.022;
+use warnings;
 
-  # Load configuration from config file
-  my $config = $self->plugin('NotYAMLConfig');
+use base 'Mojolicious';
 
-  # Configure the application
-  $self->secrets($config->{secrets});
 
-  # Router
-  my $r = $self->routes;
+sub startup {
+	my $self = shift;
+	
+	my $config = $self->plugin('NotYAMLConfig');
 
-  # Normal route to controller
-  $r->get('/')->to('Example#welcome');
+	$self->secrets($config->{secrets});
+
+	my $r = $self->routes;
+	$r->get('/')->to('Home#home');
 }
 
 1;

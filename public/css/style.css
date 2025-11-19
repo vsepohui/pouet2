@@ -1,0 +1,58 @@
+body {
+	background-image: url('/i/bg.png'); 
+	color: #303010; 
+	font-family: 'IBM Plex Mono', monospace;
+}
+.title {
+	text-align: center; 
+	font-size: 82px; 
+	font-family: 'Merriweather', serif;
+	width: 100%;
+}
+
+.link {
+	color: #303010;
+	text-decoration: none !important;
+}
+
+
+.link:hover {
+	color: #303010;
+}
+
+.tt {
+	color: #303010;
+	text-decoration: none !important;
+}
+
+.atime {
+	margin-bottom:-1px; 
+	margin-top: -3px;
+	text-align: center;
+}
+
+hr {
+	background-color: #303010; 
+	color: #color; 
+	height: 2px; 
+	opacity: 32%; 
+	margin-top: -7px;
+}
+
+.lh {
+	margin-top: -1px;
+}
+
+.sub-title {
+	text-align: center; 
+	margin-top: -10px;
+}
+
+a.active {
+	font-weight: bolder; 
+}
+
+.a-nav {
+	margin-top: -22px; 
+	margin-bottom: -5px !important;
+}

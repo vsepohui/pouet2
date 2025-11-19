@@ -1,0 +1,8 @@
+% layout 'pouet';
+
+<div class="container">
+<div class="center m-auto" style="align: center; max-width: 800px;">
+	%== $article;
+</div>
+</div>
+<br/>

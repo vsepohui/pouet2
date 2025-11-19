@@ -1,0 +1,18 @@
+% layout 'pouet';
+% title 'Иван Трунаев :: Поэт';
+
+<div class="container">
+<div class="m-auto" style="align: center; max-width: 800px;">
+<div align="center">
+		<p class="h1" align="center">
+			Я - свет<br/>
+			Я - тень<br/>
+			Меня здесь нет<br/>
+			Теперь.<br/>
+		</p>
+		<br/>
+		<a class="btn btn-primary btn-lg" href="/">Случайный стих</a>
+</div>
+</div>
+</div>
+<br/>
