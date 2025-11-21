@@ -9,7 +9,8 @@
 % $p =~ s/\n/\<br\/\>\n/g;
 %== $p;
 <br/><br/>
-<i>Из сборника "<%= config->{books}->{$book} %>"</i>
+% my $b = config->{books}->{$book};
+<i>Из сборника "<a href="<%= $b->{url} %>"><%= $b->{title} %></a>"</i>
 		</p>
 		<br/><br/>
 		<a class="btn btn-primary btn-lg" href="/">Случайный стих</a>
