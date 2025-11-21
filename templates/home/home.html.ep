@@ -8,6 +8,8 @@
 % my $p = $pouem;
 % $p =~ s/\n/\<br\/\>\n/g;
 %== $p;
+<br/><br/>
+<i>Из сборника "<%= config->{books}->{$book} %>"</i>
 		</p>
 		<br/><br/>
 		<a class="btn btn-primary btn-lg" href="/">Случайный стих</a>

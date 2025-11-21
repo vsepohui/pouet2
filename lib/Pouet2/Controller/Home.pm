@@ -12,6 +12,9 @@ sub _read_book {
 	my $self = shift;
 	my $file = shift;
 	
+	my ($name) = $file =~ /\/books\/(.+)\.txt$/;
+	
+	
 	my (@file, @book);
 	my $fh;
 	open $fh, '<:encoding(utf8)', $file;
@@ -35,7 +38,7 @@ sub _read_book {
 			my $p = join "\n", @buff;
 			$p =~ s/^\s+//;
 			$p =~ s/\s+$//;
-			push @book, $p if $p;
+			push @book, [$p, $name] if $p;
 			
 			@buff = ();
 			$c = 0;
@@ -78,7 +81,7 @@ sub home {
 	
 	my $p = $self->get_pouem();
 
-	$self->render(pouem => $p);
+	$self->render(pouem => $p->[0], book => $p->[1]);
 }
 
 1;

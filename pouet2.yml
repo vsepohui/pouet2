@@ -6,3 +6,11 @@ hypnotoad:
   proxy: 1
 secrets:
   - 37b5a4372e8c819352e5084cd0c067fa1774593b
+books:
+  'Veseliy_Delf': 'Веселый Дэлф'
+  'Pouetics': 'Поэтика'
+  'Veseliy_Govinda': 'Веселый Говинда'
+  'Veseliy_Shiwa': 'Веселый Шива'
+  'Veseliy_Krishna': 'Веселый Кришна'
+  'Veseliy_Buddha': 'Веселый Будда'
+  
