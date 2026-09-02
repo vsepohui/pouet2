@@ -15,6 +15,8 @@ sub startup {
 
 	my $r = $self->routes;
 	$r->get('/')->to('Home#home');
+	
+	$r->get('/home')->to('Home#home');
 }
 
 1;
