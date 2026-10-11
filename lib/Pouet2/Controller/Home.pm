@@ -5,6 +5,8 @@ use warnings;
 
 use base 'Mojolicious::Controller';
 
+use Strong::Random;
+
 use utf8;
 
 
@@ -72,7 +74,9 @@ sub _pouem_base {
 sub get_pouem {
 	my $self = shift;
 	my $base = $self->_pouem_base;
-	return $base->[int rand (scalar @$base)];
+	
+	state $r = new Strong::Random;
+	return $base->[$r->rand (scalar @$base)];
 }
 
 
