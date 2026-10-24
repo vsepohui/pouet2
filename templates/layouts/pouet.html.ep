@@ -35,14 +35,15 @@
 		<%= content %>
 	</div>
 
+
+	<footer class="container footer fixed-bottom text-center justify-content-center border-top" style="padding-top: 12px; margin-bottom: 12px;">
+		Поэт&nbsp;<a href="https://trunaev.ru/">Иван Трунаев</a>
+
+<br/>
 <script>
 var url = new URL(window.location.href);
 document.write("<iframe src='https://counter.su/counter?host="+url.hostname+"' width='100' height='80' frameborder='0'></iframe>");
 </script>
-
-
-	<footer class="container footer fixed-bottom d-flex flex-wrap justify-content-center border-top" style="padding-top: 12px; margin-bottom: 12px;">
-		Поэт&nbsp;<a href="https://trunaev.ru/">Иван Трунаев</a>
 		
 	</footer>
 </div>
